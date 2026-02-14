@@ -1,127 +1,45 @@
-﻿docker : #0 building 
-with "desktop-linux" 
-instance using 
-docker driver
-At line:1 char:1
-+ docker build 
---progress=plain -t 
-welcome-to-docker . 
-2>&1 | Out-File  ...
-+ ~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~
-    + CategoryInfo   
-           : NotSpe  
-  cified: (#0 buil   
- ding wit...g doc    
-ker driver:Strin    
-g) [], RemoteExc    
-eption
-    + FullyQualified 
-   ErrorId : Native  
-  CommandError
- 
+﻿#0 building with "desktop-linux" instance using docker driver
 
-#1 [internal] load 
-build definition 
-from Dockerfile
-#1 transferring 
-dockerfile: 676B done
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 676B done
 #1 DONE 0.0s
 
-#2 [internal] load 
-metadata for docker.i
-o/library/node:22-alp
-ine
+#2 [internal] load metadata for docker.io/library/node:22-alpine
 #2 DONE 0.4s
 
-#3 [internal] load 
-.dockerignore
-#3 transferring 
-context: 52B done
+#3 [internal] load .dockerignore
+#3 transferring context: 52B done
 #3 DONE 0.0s
 
-#4 [1/6] FROM docker.
-io/library/node:22-al
-pine@sha256:e4bf2a82a
-d0a4037d28035ae715298
-73c069b13eb0455466ae0
-bc13363826e34
-#4 resolve docker.io/
-library/node:22-alpin
-e@sha256:e4bf2a82ad0a
-4037d28035ae71529873c
-069b13eb0455466ae0bc1
-3363826e34 0.0s done
+#4 [1/6] FROM docker.io/library/node:22-alpine@sha256:e4bf2a82ad0a4037d28035ae71529873c069b13eb0455466ae0bc13363826e34
+#4 resolve docker.io/library/node:22-alpine@sha256:e4bf2a82ad0a4037d28035ae71529873c069b13eb0455466ae0bc13363826e34 0.0s done
 #4 DONE 0.1s
 
-#5 [internal] load 
-build context
-#5 transferring 
-context: 393B done
+#5 [internal] load build context
+#5 transferring context: 393B done
 #5 DONE 0.0s
 
-#6 [4/6] COPY ./src 
-./src
+#6 [4/6] COPY ./src ./src
 #6 CACHED
 
-#7 [5/6] COPY 
-./public ./public
+#7 [5/6] COPY ./public ./public
 #7 CACHED
 
 #8 [2/6] WORKDIR /app
 #8 CACHED
 
-#9 [3/6] COPY 
-package*.json ./
+#9 [3/6] COPY package*.json ./
 #9 CACHED
 
-#10 [6/6] RUN npm 
-install     && npm 
-install -g 
-serve@latest     && 
-npm run build     && 
-rm -fr node_modules
+#10 [6/6] RUN npm install && npm install -g serve@latest && npm run build && rm -fr node_modules
 #10 CACHED
 
-#11 exporting to 
-image
-#11 exporting layers 
-done
-#11 exporting 
-manifest sha256:d688e
-d7c78910e0a70852281f1
-b5cac2f4873319b7c14ce
-3197110d5401aa05a 
-done
-#11 exporting config 
-sha256:acbe9c5aed3ce2
-f27a95c570519de4b87a6
-2b77f8156a430b3a4cf4c
-4886f188 done
-#11 exporting 
-attestation manifest 
-sha256:a7076c54fe7c2e
-3b4e8657fa5693b6ea5c2
-e658a801f4e366bf8a149
-1ed46ee1 0.1s done
-#11 exporting 
-manifest list sha256:
-a4983b61847a35dc592c7
-3eec73b27340d53795b10
-705abbf6dba5daa699417
-f
-#11 exporting 
-manifest list sha256:
-a4983b61847a35dc592c7
-3eec73b27340d53795b10
-705abbf6dba5daa699417
-f 0.0s done
-#11 naming to docker.
-io/library/welcome-to
--docker:latest done
-#11 unpacking to dock
-er.io/library/welcome
--to-docker:latest 
-0.0s done
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:d688ed7c78910e0a70852281f1b5cac2f4873319b7c14ce3197110d5401aa05a done
+#11 exporting config sha256:acbe9c5aed3ce2f27a95c570519de4b87a62b77f8156a430b3a4cf4c4886f188 done
+#11 exporting attestation manifest sha256:a7076c54fe7c2e3b4e8657fa5693b6ea5c2e658a801f4e366bf8a1491ed46ee1 0.1s done
+#11 exporting manifest list sha256:a4983b61847a35dc592c73eec73b27340d53795b10705abbf6dba5daa699417f done
+#11 naming to docker.io/library/welcome-to-docker:latest done
+#11 unpacking to docker.io/library/welcome-to-docker:latest 0.0s done
 #11 DONE 0.2s
